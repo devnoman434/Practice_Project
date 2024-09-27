@@ -2,6 +2,7 @@
 
 body {
     background-color: #111215;
+    margin: 0px;
 }
 
 * {
@@ -15,7 +16,7 @@ body {
 }
 
 .header-class{
-    height: 98.3vh;
+    height: 97.9vh;
 }
 
 li {
@@ -152,4 +153,161 @@ h1 {
 }
 .second{
     padding: 120px 0px;
+}
+.firstcontainer-icon,.secondcontainer-icon,.thirdcontainer-icon,.fourthcontainer-icon{
+    width: 40px;
+    height: 40px;
+}
+h3{
+    color: white;
+    font-size: 18px;
+}
+.firstcontainer-para,.secondcontainer-para,.thirdcontainer-para,.fourthcontainer-para{
+    font-size: 16px;
+    color: #a4a7b1;
+}
+.first-container,.second-container,.third-container,.fourth-container{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    column-gap: 50px;
+    align-items: center;
+    margin-top: 30px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.firstrow,.secondrow{
+    display: flex;
+    justify-content: center;
+    column-gap: 4vw;
+}
+.video-page {
+    position: relative;
+    background-image: url('https://www.nestle-cereals.com/uk/sites/g/files/qirczx836/files/2022-07/wheat-facts.jpg.jpg');
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 85vh;                
+    width: 100vw;                 
+  }
+  .video img{
+    height: 30px;
+    margin-top: 358px;
+    width: 30px;
+    padding: 37px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 50px);
+    /* top: calc(61% - 50px); */
+    /* text-align: center;*/
+  }
+  h2{
+    font-size: 30px;
+    margin: 0px;
+  }
+  span{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .firsttext-para,.secondtext-para{
+    font-size: 15;
+    margin: 0px;
+  }
+  .firsttext-picture{
+    color: white;
+    background-color: #272727;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 100px 0px 350px;
+  }
+  .secondtext-picture{
+    color: black;
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+  }
+  .text-picture{
+    position: absolute;
+    bottom: 0;
+  }
+  /* .list{
+    display: flex; */
+    /* justify-items: center; */
+    /* align-items: center;
+    justify-content: center;
+  } */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: 0px auto 80px; */
+}
+.portfolio-all,.slider-main{
+    padding: 120px 0px;
+}
+.list-div{
+    display: flex;
+    text-align: center;
+    /* display: -webkit-inline-box; */
+    /* display: inline-flex; */
+    justify-content: center;
+    padding: 50px 0px;
+}
+.first-photo img{
+    width: 530px;
+}
+.firstrow-photos,.secondrow-photos{
+    display: flex;
+    /* max-width: 1920px; */
+    justify-content: space-evenly;
+}
+.first-photo{
+    color: white;
+    text-align: center;
+}
+
+.first-photo img:hover{
+    transform: scale(0.9);
+    transition: 1s ease-in-out;
+}
+.firstslide-left img{
+    width: 52.8px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 15px;
+    font-weight: 900;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0px;
+}
+.designation{
+    color: white;
+    font-size: 13px;
+    margin: 0px;
+}
+.talk{
+    color: white;
+    text-align: justify;
+    font-size: 28px;
+    font-weight: 500;
+}
+.slides{
+    display: flex;
+    justify-content: center;
+}
+.first-slide{
+    display: flex;
+    align-items: center;
+    column-gap: 2vw;
+    height: 260px;
+    padding: 20px 40px;
+    background-color: #06081C;
+    margin: 0px 60px 0px 0px;
+    width: 670px;
 }
