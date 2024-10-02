@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Linking Google fonts for icons -->
@@ -11,11 +12,13 @@
     <!-- Linking SwiperJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1075px)" href="phone.css" > 
+    <link rel="stylesheet" media="screen and (max-width:875px)" href="small.css" > 
 </head>
 
 <body>
     <header class="header-class">
-        <div class="main-navbar container">
+        <!-- <div class="main-navbar container">
             <div class="icon">
                 <img src="logo-light.png" alt="vio">
             </div>
@@ -26,7 +29,32 @@
                 <li class="blog" href="blog">BLOG</li>
                 <li class="contact" href="contact">CONTACT</li>
             </ul>
-        </div>
+        </div> -->
+        <section>
+            <nav class="nav-main">
+                <div class="icon"><img src="logo-light.png" alt=""></div>
+                <ul>
+                    <li> <a href="#">HOME</a></li>
+                    <li> <a href="#">ABOUT</a></li>
+                    <li> <a href="#">WORKS</a></li>
+                    <li> <a href="#">BLOG</a></li>
+                    <li> <a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="toggle">
+                <button id="hit">
+                    <svg viewBox="0 -2 100 80" width="40" height="30" style="
+                overflow: visible; 
+            "> >
+                        <rect id="change0" width="75" height="10" fill="#f7f7f7"></rect>
+                        <rect id="change" y="30" width="75" height="10" fill="#f7f7f7"></rect>
+                        <rect id="change1" y="60" width="75" height="10" fill="#f7f7f7"></rect>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
 
         <div class="first-page container">
             <div class="firstpage-left">
@@ -60,7 +88,7 @@
                         <img src="compass-drafting-solid.svg" alt="graphics">
                     </div>
                     <div class="firstcontainer-heading">
-                        <h3>Graphic Design</h3>
+                        <h3 class="box-heading">Graphic Design</h3>
                         <p class="firstcontainer-para">Tempore corrupti temporibus fuga earum asperiores fugit
                             laudantium.</p>
                     </div>
@@ -70,7 +98,7 @@
                         <img src="mobile-solid.svg" alt="graphics">
                     </div>
                     <div class="secondcontainer-heading">
-                        <h3>Web & Mobile Design</h3>
+                        <h3 class="box-heading">Web & Mobile Design</h3>
                         <p class="secondcontainer-para">Tempore corrupti temporibus fuga earum asperiores fugit.</p>
                     </div>
                 </div>
@@ -83,7 +111,7 @@
                         <img src="store-solid.svg" alt="store-solid">
                     </div>
                     <div class="thirdcontainer-heading">
-                        <h3>Social Media Marketing</h3>
+                        <h3 class="box-heading">Social Media Marketing</h3>
                         <p class="thirdcontainer-para">Tempore corrupti temporibus fuga earum asperiores fugit.</p>
                     </div>
                 </div>
@@ -92,7 +120,7 @@
                         <img src="hard-drive-regular.svg" alt="hard-drive-regular">
                     </div>
                     <div class="fourthcontainer-heading">
-                        <h3>Document Legal Policy</h3>
+                        <h3 class="box-heading">Document Legal Policy</h3>
                         <p class="secondcontainer-para">Tempore corrupti temporibus fuga earum asperiores fugit
                             laudantium.</p>
                     </div>
@@ -127,7 +155,7 @@
         </div>
         <div class="list-div">
             <h3 class="list">ALL</h3>
-            </h3>
+
             <li class="list-text">BRANDING</li>
             <li class="list-text">MOBILE APP</li>
             <li class="list-text">CREATIVE</li>
@@ -175,123 +203,123 @@
 
 
     <div class="container swiper"></div>
-        <div class="card-wrapper">
-            <!-- Card slides container -->
-            <ul class="card-list swiper-wrapper">
-                <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="cardimage-div">
-                                <img src="co.jpg" alt="Card Image" class="card-image">
-                                <p class="badge badge-designer">Alex Regelman</p>
-                                <p class="designation">Co-founder,<br>Colabrio</p>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
-                                    an
-                                    animation for our
-                                    ‘Click & Collect’ service.</h2>
-                            </div>
+    <div class="card-wrapper">
+        <!-- Card slides container -->
+        <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="cardimage-div">
+                            <img src="co.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-designer">Alex Regelman</p>
+                            <p class="designation">Co-founder,<br>Colabrio</p>
                         </div>
-                    </a>
-                </li>
-                <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="cardimage-div">
-                                <img src="co.jpg" alt="Card Image" class="card-image">
-                                <p class="badge badge-designer">Alex Regelman</p>
-                                <p class="designation">Co-founder,<br>Colabrio</p>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
-                                    an
-                                    animation for our
-                                    ‘Click & Collect’ service.</h2>
+                        <div class="card-text">
+                            <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
+                                an
+                                animation for our
+                                ‘Click & Collect’ service.</h2>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="cardimage-div">
+                            <img src="co.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-designer">Alex Regelman</p>
+                            <p class="designation">Co-founder,<br>Colabrio</p>
+                        </div>
+                        <div class="card-text">
+                            <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
+                                an
+                                animation for our
+                                ‘Click & Collect’ service.</h2>
 
-                            </div>
                         </div>
-                    </a>
-                </li>
-                <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="cardimage-div">
-                                <img src="co.jpg" alt="Card Image" class="card-image">
-                                <p class="badge badge-designer">Alex Regelman</p>
-                                <p class="designation">Co-founder,<br>Colabrio</p>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
-                                    an
-                                    animation for our
-                                    ‘Click & Collect’ service.</h2>
-                            </div>
+                    </div>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="cardimage-div">
+                            <img src="co.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-designer">Alex Regelman</p>
+                            <p class="designation">Co-founder,<br>Colabrio</p>
                         </div>
-                    </a>
-                </li>
-                <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="cardimage-div">
-                                <img src="co.jpg" alt="Card Image" class="card-image">
-                                <p class="badge badge-designer">Alex Regelman</p>
-                                <p class="designation">Co-founder,<br>Colabrio</p>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
-                                    an
-                                    animation for our
-                                    ‘Click & Collect’ service.</h2>
-                            </div>
+                        <div class="card-text">
+                            <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
+                                an
+                                animation for our
+                                ‘Click & Collect’ service.</h2>
                         </div>
-                    </a>
-                </li>
-                <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="cardimage-div">
-                                <img src="co.jpg" alt="Card Image" class="card-image">
-                                <p class="badge badge-designer">Alex Regelman</p>
-                                <p class="designation">Co-founder,<br>Colabrio</p>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
-                                    an
-                                    animation for our
-                                    ‘Click & Collect’ service.</h2>
+                    </div>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="cardimage-div">
+                            <img src="co.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-designer">Alex Regelman</p>
+                            <p class="designation">Co-founder,<br>Colabrio</p>
+                        </div>
+                        <div class="card-text">
+                            <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
+                                an
+                                animation for our
+                                ‘Click & Collect’ service.</h2>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="cardimage-div">
+                            <img src="co.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-designer">Alex Regelman</p>
+                            <p class="designation">Co-founder,<br>Colabrio</p>
+                        </div>
+                        <div class="card-text">
+                            <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
+                                an
+                                animation for our
+                                ‘Click & Collect’ service.</h2>
 
-                            </div>
                         </div>
-                    </a>
-                </li>
-                <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <div class="card">
-                            <div class="cardimage-div">
-                                <img src="co.jpg" alt="Card Image" class="card-image">
-                                <p class="badge badge-designer">Alex Regelman</p>
-                                <p class="designation">Co-founder,<br>Colabrio</p>
-                            </div>
-                            <div class="card-text">
-                                <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
-                                    an
-                                    animation for our
-                                    ‘Click & Collect’ service.</h2>
-                            </div>
+                    </div>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <div class="cardimage-div">
+                            <img src="co.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-designer">Alex Regelman</p>
+                            <p class="designation">Co-founder,<br>Colabrio</p>
                         </div>
-                    </a>
-                </li>
+                        <div class="card-text">
+                            <h2 class="card-title">I would highly recommend Vie Digital. I worked with the team on
+                                an
+                                animation for our
+                                ‘Click & Collect’ service.</h2>
+                        </div>
+                    </div>
+                </a>
+            </li>
 
-            </ul>
+        </ul>
 
-            <!-- Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
+        <!-- Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
 
-            <!-- Navigation Buttons -->
-            <!-- <div class="swiper-slide-button swiper-button-prev"></div>
+        <!-- Navigation Buttons -->
+        <!-- <div class="swiper-slide-button swiper-button-prev"></div>
             <div class="swiper-slide-button swiper-button-next"></div> -->
-        </div>
+    </div>
     </div>
 
     <div class="team-main">
@@ -371,7 +399,7 @@
 
     <div class="last">
         <div class="contact">
-            <h1 class="con">Contact Us</h1>
+            <h1 class="unique head">Contact Us</h1>
             <div class="cont">
                 <div class="contact-img">
                     <img src="location-dot-solid.svg" alt="location-dot-solid">
@@ -406,7 +434,7 @@
 
 
         <div class="recent">
-            <h1 class="con">Recent News</h1>
+            <h1 class="unique head">Recent News</h1>
 
             <div class="recent1">
                 <div class="recent1-image">
@@ -445,7 +473,7 @@
                 <img src="instagram-brands-solid.svg" alt="instagram-brands-solid">
                 <img src="youtube-brands-solid.svg" alt="youtube-brands-solid">
             </div>
-            <p class="vie-text">© 2023, Vie Template. Made with passion <br> by ThemesCamp.</p>
+            <p class="vie-text contact-para">© 2023, Vie Template. Made with passion <br> by ThemesCamp.</p>
         </div>
     </div>
 

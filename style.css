@@ -10,16 +10,16 @@ body {
 }
 
 
-.container{
+/* .container{
     max-width: 1920px;
     width: 100%;
-}
+} */
 
 .header-class{
     height: 97.9vh;
 }
 
-li {
+/* li {
     font-size: 12px;
     font-weight: 500;
     color: #fff;
@@ -29,19 +29,67 @@ li {
 
 .navbar-menu {
     display: flex;
+    flex-wrap: wrap;
     position: sticky;
 
+} */
+
+/* .main-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+/* body{
+    background-color: #f1f1f1;
+} */
+
+.nav-main{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:14vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav-main ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    top: -5px;
+}
+.nav-main ul li{
+    color: white;
+list-style: none;
+line-height: 0px;
+padding: 10px 55px 0 0;
+}
+
+.nav-main ul li a{
+    display: block;
+    height: 200%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
 }
 
 .icon img {
     width: 50px;
 }
 
-.main-navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 .firstpage_head,.latest{
     color: white;
@@ -55,7 +103,7 @@ li {
     border-radius: 10px;
 }
 
-h1 {
+.unique {
     color: white;
     font-size: 55px;
     font-weight: 600 !important;
@@ -99,15 +147,16 @@ h1 {
 
 .firstpage-image {
     position: relative;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-    width: 600px;
-    height: 400px;
+    width: 580px;
+    height: 380px;
     border-radius: 15px;
 }
 
 .first-page {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     column-gap: 150px;
@@ -145,6 +194,7 @@ h1 {
 }
 .secondpage{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     /* justify-items: center; */
     /* justify-content: center; */
@@ -168,6 +218,7 @@ h3{
 }
 .first-container,.second-container,.third-container,.fourth-container{
     display: flex;
+    flex-wrap: wrap;
     width: 500px;
     justify-content: space-between;
     column-gap: 50px;
@@ -179,6 +230,7 @@ h3{
 }
 .firstrow,.secondrow{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 4vw;
 }
@@ -191,18 +243,20 @@ h3{
     height: 85vh;                
     width: 100vw;                 
   }
-  .video img{
-    height: 30px;
-    margin-top: 358px;
-    width: 30px;
-    padding: 37px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    left: calc(50% - 50px);
-    /* top: calc(61% - 50px); */
-    /* text-align: center;*/
-  }
+ 
+    .video img {
+        height: 30px;
+        width: 30px;
+        padding: 37px;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
   h2{
     font-size: 30px;
     margin: 0px;
@@ -240,6 +294,7 @@ h3{
   } */
 .portfolio,.team-text{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     /* justify-items: center; */
     /* justify-content: center; */
@@ -249,19 +304,25 @@ h3{
 .portfolio-all,.slider-main,.latest-news,.next-project{
     padding: 120px 0px;
 }
+.list-text{
+    color: white;
+}
 .list-div{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     /* display: -webkit-inline-box; */
     /* display: inline-flex; */
     justify-content: center;
     padding: 50px 0px;
+    align-items: center;
 }
 .first-photo img{
     width: 530px;
 }
 .firstrow-photos,.secondrow-photos{
     display: flex;
+    flex-wrap: wrap;
     /* max-width: 1920px; */
     justify-content: space-evenly;
 }
@@ -322,6 +383,7 @@ h3{
 }
 .team-photos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -349,12 +411,14 @@ h3{
 }
 .latestnews-right1{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 3vw;
     padding: 20px 0px;
 }
 
 .latest-news{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .lets{
@@ -379,6 +443,7 @@ h3{
 
 .next-project{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -411,6 +476,7 @@ h3{
 
 .cont{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 1vw;
     padding: 15px 0px;
@@ -421,6 +487,7 @@ h3{
 }
 .recent1{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 1vw;
 }
 
@@ -450,6 +517,7 @@ h3{
 
 .last{
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-evenly;
 }
@@ -482,6 +550,7 @@ h3{
 
 .photos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -598,8 +667,9 @@ h3{
   
   .card{
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
-    column-gap: 3vw;
+    column-gap: 1.5vw;
   }
   
   .designation{
@@ -609,4 +679,75 @@ h3{
   }
 
 
+  @media only screen and (max-width: 768px) {
+    .unique {font-size: 40px; }
+    .help{font-size: 10px;}
+    .firstpage-button,.get {color: white;padding: 10px 25px;font-size: 9px; border: 1px solid white;}
+    .firstpage_head,.latest{color: white;font-size: 10px;padding: 4px 8px;}
+    .firstpage-image img {width: 290px;height: 190px;}
+    .firstpage-image{width: 290px;height: 190px;}
+    .firsttext-picture{ position: absolute; bottom: 0; display: inline-block;}
+    .secondtext-picture{ position: absolute; bottom: 0; display: inline-block;}
+    .Best{font-size: 12px;letter-spacing: 4px;}
+    .digital {font-size: 27px;}
+    .first-photo img{width: 240px;}
+    .team-photos img{width: 270px;}
+    .photos{row-gap: 2vw;}
+    .Trending{font-size: 20px;}
+    .latestnewsright1-image img{ width: 140px;}
+    .right-para{font-size: 15px;}
+    .about-your{font-size: 38px;}
+    .next-pro{font-size: 38px;}
+    .head{font-size: 15px;}
+    .contact-head{font-size: 13px;}
+    .contact-para{font-size: 10px;}
+    .firstpage-button{margin-bottom: 30px;}
+    .bottom-line{display: none;}
+    .firstcontainer-icon,.secondcontainer-icon,.thirdcontainer-icon,.fourthcontainer-icon{width: 20px;height: 20px;}
+    .box-heading{font-size: 10px;}
+    .icon img{padding: 0px 20px;}
+    .firstcontainer-para,.secondcontainer-para,.thirdcontainer-para,.fourthcontainer-para{font-size: 10px;}
+    .first-container,.second-container,.third-container,.fourth-container{width: 500px;justify-content: space-between;align-items: center;margin-top: 30px;padding: 60px 40px;}
+}
 
+@media only screen and (max-width: 400px){
+    li { font-size: 10px;font-weight: 500;color: #fff;margin: 4px 9px;}
+    .first-page{padding: 120px 0px 0px 0px;}
+    .firstpage_head,.latest{font-size: 8px;padding: 3px 6px;}
+    .unique {font-size: 25px; }
+    .help{font-size: 8px;}
+    .firstpage-button,.get{padding: 8px 20px;font-size: 7px;}
+    .firstpage-image img {width: 200px;height: 130px;}
+    .firstpage-image{width: 200px;height: 130px;}
+    .bottom-line{display: none;}
+    .second{padding: 0px;}
+    .digital {font-size: 25px;}
+    .latestnews-right1{ display: flex;flex-wrap: wrap;column-gap: 3vw;padding: 20px 45px;}
+    .about-your{font-size: 20px;}
+    .next-pro{font-size: 20px;}
+    .head{font-size: 10px;}
+    .contact-img img{
+        width: 20px;
+        height: 20px;
+    }
+    .contact-head{font-size: 11px;}
+    .contact-para{font-size: 8px;}
+    .video-page{width: 100vw;}
+    .team-photos img{width: 230px;}
+    .list{font-size: 15px;}
+    .firsttext-picture{ width: 125px; margin: 0px 100px 0px 250px;}
+    .secondtext-picture{ width: 125px;}
+    .card-list .card-item {margin: 0px;}
+    .header-class{height: 70vh;}
+    .secondpage{margin: 0px auto 20px;}
+    .card-list .card-link .card-title {font-size: 11px;font-weight: 600;}
+    .icon img{padding: 0px 20px;}
+    .photo-main{    display: flex;
+        flex-direction: column;
+        justify-content: center;}
+}
+
+@media only screen and (min-width: 875px){
+#hit{display: none;}
+
+}
